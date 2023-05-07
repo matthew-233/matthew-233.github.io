@@ -144,16 +144,17 @@ p {
 .about-title1,
 .contact-title1 {
         margin-top: 0.67em;
-    margin-bottom: 0.67em;
+        margin-bottom: 0.67em;
         font-size: 3.5em;
-        font-weight:bold;
+        font-weight: bold;
         display: flex;
         justify-content: center;
 }
+
 .about-title2,
 .contact-title2 {
         margin-top: 0.83em;
-    margin-bottom: 0.83em;
+        margin-bottom: 0.83em;
         font-size: 2em;
         font-weight: bold;
         display: flex;
@@ -307,18 +308,19 @@ input {
 }
 
 #home-ellie-pic {
-        background-image: url(ellie-pic1.jpg);
-        background-size: 100% 100%;
-        height: 500px;
-        width: 400px;
+        height: auto;
+        max-width: 100%;
         align-self: center;
         border-radius: 15px;
         border: #B36104 10px solid;
 }
 
-#home-section-h2 {align-self:center;
+#home-section-h2 {
+        align-self: center;
         text-transform: uppercase;
-        text-shadow: black 0px 0px 5px;}
+        text-shadow: black 0px 0px 5px;
+}
+
 footer {
         background-color: #007EB3;
         grid-area: footer;
@@ -377,4 +379,145 @@ footer {
 #audio {
         align-self: center;
         margin: 20px;
+}
+
+#about-mobile-navjump {display: none;}
+
+@media only screen and (max-width: 798px) {
+        body {
+                margin: 0;
+        }
+
+        .home-container {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 0.5fr repeat(7, 1fr) .25fr;
+                grid-template-areas: "nav nav nav"
+                        "header header header"
+                        "header header header"
+                        "header header header"
+                        "header header header"
+                        "header header header"
+                        "section section section"
+                        "section section section"
+                        "footer footer footer"
+        }
+
+        .home-section {
+                border: 7px;
+        }
+
+        nav ul {
+                gap: 8px;
+        }
+
+        #ellie_logo {
+                max-width: 100%;
+                height: auto;
+        }
+
+        h1 {
+                font-size: 2.5em;
+        }
+
+        h2 {
+                font-size: 1.75em;
+        }
+
+        p {
+                font-size: 1.5em;
+        }
+
+        .home-nav {
+                font-size: 1.3em;
+        }
+
+
+        .contact-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 0.5fr 0.25fr repeat(6, 1fr) 0.25fr;
+                grid-template-areas: "header header header "
+                        "nav nav nav"
+                        "section section section "
+                        "section section section "
+                        "section section section "
+                        "section section section "
+                        "section section section "
+                        "section section section"
+                        "footer footer footer ";
+                text-align: center;
+
+        }
+
+        .contact-nav,
+        .about-nav {
+                flex-direction: row;
+                padding-top: 0;
+        }
+
+        .contact-nav ul,
+        .about-nav ul {
+                display: flex;
+                flex-direction: row;
+                padding-right: 0;
+                padding-top: 0;
+                position: relative;
+                right: 30px;
+                font-size: 1.2em;
+        }
+
+        .about-title1,
+        .contact-title1 {
+                font-size: 2.5em;
+        }
+
+        .about-title2,
+        .contact-title2 {
+                font-size: 1.75em;
+        }
+
+        .about-catpaw,
+        .contact-catpaw {
+                height: 50px;
+                width: 50px;
+                margin-left: 0;
+                margin-right: 5px;
+        }
+
+        .about-container {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 0.35fr 0.25fr 0.15fr repeat(7, 1fr) 0.25fr;
+                grid-template-areas: "header header header "
+                        "nav nav nav"
+                        "jump jump jump"
+                        "section section section"
+                        "section section section"
+                        "section section section"
+                        "section section section"
+                        "section section section"
+                        "section section section"
+                        "section section section"
+                        "aside aside aside"
+                        "footer footer footer";
+                        text-align: center;
+        }
+
+        #about-jumpnav {
+                display: none;
+        }
+
+        #about-mobile-jumpnav {
+                grid-area: jump;
+                padding-top: 25px;
+        border: 5px #B36104 solid;
+        border-radius: 15px;
+        background-color: #0DB7FF;
+        font-size: 1.5em;
+        }
+
+        iframe {width: 100%;
+                height: auto;}
+
+        .cat-images {height: auto;
+                        width: 100%;}
 }
