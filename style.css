@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ffbb00, #ddda38);
+}
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 60%;
+  display: flex;
+  flex-direction: column;
+  gap:0.5em;
+  background-color: #ffffff;
+  padding: 0.65em;
+  border-radius: 0.5em;
+  box-shadow: 0 2.5em 3.75em rgba(30, 19, 70, 0.3);
+  border: 5px solid rgb(35, 92, 248);
+}
+
+#game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.letter-box {
+  border: 2.8px solid black;
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 4.4rem;
+  width: 4.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.filled-box {
+  border: 2px solid black;
+}
+
+.letter-row {
+  display: flex;
+}
+
+#keyboard-cont {
+  margin: 0.3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#keyboard-cont div {
+  display: flex;
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+.keyboard-button {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 0.75rem;
+  border-radius: 17px;
+  margin: 0 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#title {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: rgb(35, 92, 248);
+  position:relative;
+  font-size: 5em;
+  top: 20px;
+  left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    flex-direction: column;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0.5em;
+  }
+}
