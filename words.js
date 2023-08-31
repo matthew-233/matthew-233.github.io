@@ -6,7 +6,7 @@ export const WORDS = [
     'grandma',
     'naptime',
     'pumpkin',
-    'chescack',
+    'chescak',
     'garbage',
     'gbicday',
     'mimosas',
@@ -41,7 +41,11 @@ export const WORDS = [
     'glasses',
     'eyebrow',
     'netflix',
-    'weather'
+    'weather',
+    'slushie',
+    'westsac',
+    'bikedog'
+
  ];
 
 
