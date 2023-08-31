@@ -106,7 +106,7 @@ let guessString = "";
   }
 
   if (guessString === rightGuessString) {
-    toastr.success("You guessed right! Game over!");
+    toastr.success("You guessed right! Everybody happy!?");
     guessesRemaining = 0;
     return;
   } else {
@@ -115,7 +115,7 @@ let guessString = "";
     nextLetter = 0;
 
     if (guessesRemaining === 0) {
-      toastr.error("You've run out of guesses! Game over!");
+      toastr.error("You ran out of guesses! Spanlongday...");
       toastr.info(`The right word was: "${rightGuessString}"`);
     }
   }

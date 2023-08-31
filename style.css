@@ -77,19 +77,19 @@ body {
 }
 
 #title {
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family:'Comic Sans MS', cursive;
+  text-shadow: 2px 2px 0px #FF0000;
   color: rgb(35, 92, 248);
   position:relative;
   font-size: 5em;
-  top: 20px;
+  top: 10px;
   left: 20px;
 }
 
-@media screen and (max-width: 700px) {
-  .wrapper {
-    flex-direction: column;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 0.5em;
-  }
-}
+#controlz {position: absolute;
+          top: 100px;
+          left: 300px;}
+
+#keyboard {position: relative;
+            left: 100px;
+            top: 90px;}
